@@ -1,11 +1,8 @@
 <div class="container">
-  <%# <div class="d-flex justify-content-between"> %>
-  <div class="d-flex align-items-center">
+  <%# <div class="d-flex align-items-center">
     <h1>Tasks </h1>
-    <%= link_to new_task_path do %>
-      <i class="fas fa-plus"></i>
-    <% end %>
-  </div>
+  </div> %>
+    <h1>Tasks </h1>
   <div class="tasks">
     <% @tasks.each do |task| %>
       <div class="task">
@@ -13,4 +10,7 @@
       </div>
     <% end %>
   </div>
+  <%= link_to new_task_path do %>
+    <p class="d-flex align-items-center"><i class="fas fa-plus m-1"></i> Add new task</p>
+  <% end %>
 </div>

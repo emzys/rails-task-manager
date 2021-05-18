@@ -3,11 +3,11 @@
   <p><%= @task.details %></p>
   <div class="controllers">
     <%= link_to tasks_path do %>
-      <i class="fas fa-home"></i>
+      <p class="d-flex align-items-center"><i class="fas fa-undo m-1"></i> Go back to tasks</p>
     <% end %>
     <%# <%= link_to task_path(@task), method: :delete, data: { confirm: 'Are you sure you want to delete?'} %>
     <%= link_to task_path(@task), method: :delete do %>
-      <i class="fas fa-trash-alt"></i>
+      <p class="d-flex align-items-center"><i class="fas fa-trash-alt m-1"></i> Delete task</p>
     <% end %>
   </div>
 </div>
